@@ -8,7 +8,8 @@
 		"test": "jest",
 		"tsc": "tsc",
 		"clean": "rimraf artifacts",
-		"build": "npm run clean && npm run tsc --"
+		"build": "npm run clean && npm run tsc --",
+		"lint": "tslint src/**/*.ts"
 	},
 	"dependencies": {
 		"react": "16.0.0-beta.5",
