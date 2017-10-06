@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"start:ios": "react-native run-ios",
+		"watch": "npm run build -- -w",
+		"start:ios": "npm run build && concurrently -r 'npm run watch' 'react-native run-ios'",
 		"test": "jest",
 		"tsc": "tsc",
 		"clean": "rimraf artifacts",
