@@ -54,3 +54,6 @@ buck-out/
 
 # Artifacts
 artifacts/
+
+# Test Coverage Reports
+coverage/
